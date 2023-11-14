@@ -20,7 +20,7 @@ export class AppController {
     return { result : this.appService.findTheOdd(req.data) };
   }
 
-  @Get('count-the-smiley-faces')
+  @Post('count-the-smiley-faces')
   countTheSmileyFaces(@Body() req: { data : string[] }) {
     return { result : this.appService.countTheSmileyFaces(req.data) };
   }
